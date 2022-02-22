@@ -1,4 +1,4 @@
-//fonksiyon hatırlatma
+//fonksiyon hatÃ½rlatma
 /* Fig. 5.4: fig05_04.c
    Finding the maximum of three integers */
 #include <stdio.h>
@@ -103,10 +103,10 @@ int hcf(int n1, int n2);
 int main()
 {
    int n1, n2;
-   printf("iki sayı giriniz ....");
+   printf("iki sayÃ½ giriniz ....");
    scanf("%d %d", &n1, &n2);
 
-   printf("%d ve   %d için En buyuk ortak bolen   %d.", n1, n2, hcf(n1,n2));
+   printf("%d ve   %d iÃ§in En buyuk ortak bolen   %d.", n1, n2, hcf(n1,n2));
    return 0;
 }
 
