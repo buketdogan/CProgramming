@@ -74,6 +74,30 @@ int mystery( int a, int b )
 
 /******************************************************************
 
+
+
+#include <stdio.h>
+
+int gcd(int a, int b) ;
+   
+int main()
+{
+   int x, y;
+   
+   printf( "Enter two integers: " );
+   scanf( "%d%d", &x, &y );
+   printf( "The result is %d\n", gcd( x, y ) );
+   return 0;
+}
+
+/* Parameter b must be a positive  
+   integer to prevent infinite recursion */
+int gcd(int a, int b) 
+{ 
+   return ( b == 0 ? a : gcd(b, a % b) ); 
+}
+
+/******************************************************************
 /* Fig. 5.14: fig05_14.c
    Recursive factorial function */
 #include <stdio.h>
